@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produk - Frozen Fish Annisa 88</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="Fish.png" alt="Logo" class="logo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="produk.html">Produk</a></li>
+          <li class="nav-item"><a class="nav-link" href="rekomendasi.html">Rekomendasi</a></li>
+          <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang Kami</a></li>
+          <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Produk Section -->
+  <section class="container py-5">
+    <h2 class="text-center mb-4">Produk Kami</h2>
+    <div class="row g-4">
+      <!-- Produk Card -->
+      <div class="col-md-6">
+        <div class="card produk-card" onclick="showDetail('pempek lenjer.jpg', 'Pempek Lenjer - Rp 35.000')">
+          <img src="pempek lenjer.jpg" class="card-img-top" alt="Pempek Lenjer" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Pempek Lenjer</h5>
+            <p class="card-text text-muted">Rp 35.000 (25 pcs)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card produk-card" onclick="showDetail('pempek kapal selam.jpg', 'Pempek Kapal Selam - Rp 35.000')">
+          <img src="pempek kapal selam.jpg" class="card-img-top" alt="Pempek Kapal Selam" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Pempek Kapal Selam</h5>
+            <p class="card-text text-muted">Rp 35.000 (3 pcs)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card produk-card" onclick="showDetail('Pempek adaan.png', 'Pempek Adaan - Rp 35.000')">
+          <img src="Pempek adaan.png" class="card-img-top" alt="Pempek Adaan" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Pempek Adaan</h5>
+            <p class="card-text text-muted">Rp 35.000 (25 pcs)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card produk-card" onclick="showDetail('pempek kulit.jpg', 'Pempek Kulit - Rp 30.000')">
+          <img src="pempek kulit.jpg" class="card-img-top" alt="Pempek Kulit" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Pempek Kulit</h5>
+            <p class="card-text text-muted">Rp 30.000 (25 pcs)</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card produk-card" onclick="showDetail('nugget ikan.png', 'Nugget Ikan - Rp 35.000')">
+          <img src="nugget ikan.png" class="card-img-top" alt="Nugget Ikan" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Nugget Ikan</h5>
+            <p class="card-text text-muted">Rp 35.000 (500 gr)</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card produk-card" onclick="showDetail('tekwan.png', 'Tekwan - Rp 35.000')">
+          <img src="tekwan.png" class="card-img-top" alt="Tekwan" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Tekwan</h5>
+            <p class="card-text text-muted">Rp 35.000 (500 gr)</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card produk-card" onclick="showDetail('otak.jpg', 'Otak-otak - Rp 30.000')">
+          <img src="otak.jpg" class="card-img-top" alt="Otak-otak" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Otak-otak</h5>
+            <p class="card-text text-muted">Rp 30.000 (20 pcs)</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card produk-card" onclick="showDetail('dimsum.jpg', 'Dimsum Ikan - Rp 25.000')">
+          <img src="dimsum.jpeg" class="card-img-top" alt="Dimsum Ikan" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Dimsum Ikan</h5>
+            <p class="card-text text-muted">Rp 25.000 (20 pcs)</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card produk-card" onclick="showDetail('pempek telur.jpeg', 'Pempek Telur - Rp 50.000')">
+          <img src="pempek telur.jpeg" class="card-img-top" alt="Pempek Telur" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Pempek Telur</h5>
+            <p class="card-text text-muted">Rp 50.000 (25 pcs)</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card produk-card" onclick="showDetail('bakso ikan.jpg', 'Bakso Ikan - Rp 40.000')">
+          <img src="bakso ikan.jpg" class="card-img-top" alt="Bakso Ikan" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Bakso Ikan</h5>
+            <p class="card-text text-muted">Rp 40.000 (20 pcs)</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card produk-card" onclick="showDetail('kerupuk.jpg', 'Kerupuk Tenggiri - Rp 10.000')">
+          <img src="kerupuk.jpg" class="card-img-top" alt="Kerupuk Tenggiri" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Kerupuk Tenggiri</h5>
+            <p class="card-text text-muted">Rp 10.000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="produkModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Detail Produk</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img id="modalImg" src="" class="img-fluid mb-3" alt="Produk" />
+          <p id="modalText"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
